@@ -1,7 +1,6 @@
 #include <iostream>
 #include <iomanip>
 #include <conio.h>
-#include <cmath>
 using namespace std;
 
 int main()
@@ -24,29 +23,36 @@ int main()
 	switch(package)
 	{
 	case 'A':{
-			if (hours <= 10)
+			if (hours <= 10){
 				cout << "Total amount due: $ " << packageA << endl;
-			else 
+			}
+			else {
 				amountA = packageA + (hours - 10) * 20;
 			cout << "Total amount due: $ " << amountA << endl;
+			}
 			break;
 			 }
+			 
 	case 'B':{
-			if (hours <= 20)
+			if (hours <= 20){
 				cout << "Total amount due: $ " << packageB << endl;
-			else 
+			}
+			else{
 				amountB = packageB + (hours - 20) * 10;
 			    cout << "Total amount due: $ " << amountB << endl;
+			}
 			break;
 			 }
-	case 'C':{
+
+	case 'C':
+		    if ( hours >= 0){
 			cout << "Total amount due: $ " << packageC << endl;
+			}
 			break;
-			 }
+			 
 	}
-}
+	}
 	else cout << "Invalid Package \n\n";
-	system("pause");
 
 _getch();
 return 0;
