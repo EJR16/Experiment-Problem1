@@ -1,0 +1,53 @@
+#include <iostream>
+#include <iomanip>
+#include <conio.h>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+	float hours, amountA, amountB, amountC;
+	char package = ' ';
+	const int packageA = 995;
+	const int packageB = 1495;
+	const int packageC = 1995;
+
+	cout << "Package Available is A , B , C only!\n\n";
+	cout << "Enter the package you purchased:";
+	cin >> package;
+
+	if (package == 'A' || package == 'B' || package == 'C')
+{
+	cout<<"Enter the number of hours used:";
+	cin>> hours;
+	
+	switch(package)
+	{
+	case 'A':{
+			if (hours <= 10)
+				cout << "Total amount due: $ " << packageA << endl;
+			else 
+				amountA = packageA + (hours - 10) * 20;
+			cout << "Total amount due: $ " << amountA << endl;
+			break;
+			 }
+	case 'B':{
+			if (hours <= 20)
+				cout << "Total amount due: $ " << packageB << endl;
+			else 
+				amountB = packageB + (hours - 20) * 10;
+			    cout << "Total amount due: $ " << amountB << endl;
+			break;
+			 }
+	case 'C':{
+			cout << "Total amount due: $ " << packageC << endl;
+			break;
+			 }
+	}
+}
+	else cout << "Invalid Package \n\n";
+	system("pause");
+
+_getch();
+return 0;
+}
