@@ -1,0 +1,22 @@
+#include<iostream>
+#include <iomanip>
+#include <conio.h>
+using namespace std;
+int main(){
+	int Factor = 1;
+	int Value1 = 1;
+	while(Value1 > 0 && Value1 <= 30){
+		cout<<Value1;
+		Value1 = Value1 + Factor;
+		
+		if(Value1 >= 10){
+			Factor = 2;
+		}
+		
+		if(Value1 > 0 && Value1 <= 30){
+			cout<<",";
+						}
+	}
+_getch();
+return 0;
+	}
