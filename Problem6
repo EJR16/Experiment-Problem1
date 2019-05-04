@@ -1,0 +1,27 @@
+#include <iostream>
+#include <iomanip>
+#include <conio.h>
+using namespace std;
+
+int main()
+{
+	int first = 0;
+	int	second = 1;
+	int A, B, sum;
+		
+ 
+   for ( A = 0 ; A < B ; A++ )
+   {
+      if ( A <= 1 )
+         sum = A;
+      else
+      {
+         sum = first + second;
+         first = second;
+         second = sum;
+      }
+      cout << sum << endl;
+
+_getch();
+return 0;
+}
