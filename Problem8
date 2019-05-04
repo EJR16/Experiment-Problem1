@@ -1,0 +1,16 @@
+#include<iostream>
+#include <iomanip>
+#include <conio.h>
+using namespace std;
+int main(){
+	int Value1;
+	{
+	cout<<"Enter any number: "; cin>>Value1;
+	for(int i =1; i<=100; i++){
+		cout<<i<<"*"<<Value1<<" = "<<i*Value1<<endl;
+	}
+	}
+system("pause");
+_getch;
+return 0;
+}
