@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+	//EnterValue
+	int value1, sum;
+
+	cout<<"ENTER a number: "; cin>>value1;
+	
+	while(value1 > 0){
+	sum = 0;
+	for(int i=1; i<=value1; i++){
+		sum += i;
+	}
+	cout<<"The sum of all whole numbers from 1 to "<<value1<<" is: "<<sum<<endl;
+	
+	cout<<"ENTER a number: "; cin>>value1;
+	}
+	
+	cout<<"End";
+	return 0;
+}
