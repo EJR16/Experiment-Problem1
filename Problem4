@@ -1,0 +1,38 @@
+#include <iostream>
+#include <iomanip>
+#include <conio.h>
+using namespace std;
+
+int main()
+{
+	float firstnum, secondnum, thirdnum, answer;
+
+	cout<< "Choosing the largest number";
+	cout<<"Kindly enter value of 1st Number: "; cin>>firstnum;
+	cout<<"Kindly enter value of 2nd Number: "; cin>>secondnum;
+	cout<<"Kindly enter value of 3rd Number: "; cin>>thirdnum;
+
+	
+
+	if (secondnum > firstnum){
+		answer = secondnum;
+	}
+
+	else if ( firstnum > secondnum){
+		answer = firstnum;
+	}
+
+	else if (answer < thirdnum){
+		answer = thirdnum;
+	}
+	else {
+
+		answer = thirdnum;
+	}
+
+	cout<<"The largest is:  "<<answer;
+
+	_getch();
+return 0;
+}
+	
